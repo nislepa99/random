@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#01F1FF">
+    android:background="@drawable/back_ground">
 
     <TextView
         android:id="@+id/text1"
@@ -15,9 +15,11 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:background="@drawable/text_background"
+        android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/editText1"
@@ -26,7 +28,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
+        app:layout_constraintTop_toBottomOf="@+id/text1"/>
 
     <TextView
         android:id="@+id/text2"
@@ -37,6 +39,8 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:background="@drawable/text_background"
+        android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText1" />
@@ -48,37 +52,38 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        app:layout_constraintTop_toBottomOf="@+id/text2"/>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-
-        <Button
-            android:id="@+id/butt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#014CA0"
-            android:gravity="center"
-            android:text="Получить случайное число"
-            android:textColor="#FF0000"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="получить случайное число"
+        android:textColor="#96B6B1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@drawable/icon_for_button"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"/>
 
     <TextView
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text=""
         android:textSize="50sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="число"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
